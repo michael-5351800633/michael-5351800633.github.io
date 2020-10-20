@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700;800&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+       <script src="https://kit.fontawesome.com/3a4bcfbf6d.js" crossorigin="anonymous"></script>
+       <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Open+Sans:wght@700;800&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Merriweather+Sans:wght@700&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+       <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+     
+    </head>
+    <style>
+     hr{
+       border: none;
+       border-top: 2px solid;
+     }
+     .footer {
+      left: 0;
+     bottom: 0;
+     width: 100%;
+     background-color:grey;
+     color: white;
+     text-align: center;
+     }
+     .pagination{
+      margin: 10px 10px;
+    }
+
+    .pagination a {
+      color: rgb(226, 60, 115);
+      padding: 8px 16px;
+      font-weight: 800;
+      transition: background-color .3s;
+    }
+
+    .pagination a.active {
+      background-color:rgb(226, 60, 115);
+      color: white;
+    }
+    .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   }
+   .lolo{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: solid 1px #000;
+    background:transparent;
+    font-weight: 700;
+    color: white;
+    font-size: 4ch;
+    border: none;
+
+   }
+   .lolo:hover{
+     color: orange;
+     
+   }
+   .card-title{
+     font-weight: 600;
+     letter-spacing: 2px;
+     font-family:'Montserrat', sans-serif; ;
+   }
+   .dropdown-item{
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 700;
+     letter-spacing: 2px;
+   }
+
+   .checked {
+  color: orange;
+}
+
+    </style>
+    
+    <body style="background-color: white;"><br>
+  
+        <div class="container">
+          <div class="row">
+          <img src="img/cooklist.png" alt="" height="150px" width="210px">
+          <div class="col-1">
+          <h1 style="font-weight: 700;position: relative;top: 30px;font-family: 'Montserrat', sans-serif;letter-spacing: 3px;">COOKLIST</h1>
+          </div>
+          <div class="col-6">
+          <ul  style="position: relative;top: 39px;right: -9cm;">
+            <li style="display: inline-block; margin: 10px 5px;"><a style="color:#000;font-size: 20px;transition: 0.2s;" href=""><i class="fab fa-instagram"></i></a></li>
+            <li style="display: inline-block; margin: 10px 5px;"><a style="color:#000; ;font-size: 20px;transition: 0.2s;" href=""><i class="fab fa-facebook"></i></a> </li>
+            <li style="display: inline-block; margin: 10px 5px;"><a style="color:#000; ;font-size: 20px;transition: 0.2s;" href=""><i class="fas fa-envelope"></i></a></li>
+            <li style="display: inline-block; margin: 10px 5px;"><a style="color:#000; ;font-size: 20px;transition: 0.2s;" href=""><i class="fab fa-twitter"></i></a></li>
+            <li style="display: inline-block; margin: 10px 5px;"><a style="color:#000; ;font-size: 20px;transition: 0.2s;" href=""><i class="fab fa-pinterest-p"></i></a></li>
+          </ul>
+        </div>
+          
+          <form class="form-inline my-2 my-lg-0" style="position: relative;top: -9px;">
+          <input style="border: 2px solid#000; font-style: italic;" class="form-control mr-sm-2" type="search" placeholder="search Recipes" aria-label="Search">
+          <svg style="color: orange;" width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+            <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+          </svg>
+          </form>
+        </div>
+      </div>
+      
+      <nav class="navbar sticky-top navbar-expand-lg mt-5 " style="border: 3px solid #000;background-color: white;border-left: none;border-right: none;">
+            <div class="container" style="position: relative;right: -6cm;">
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sticky-navbar"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse" id="sticky-nav"> 
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link mr-4 " style="font-weight: 700;font-family: 'Montserrat', sans-serif;letter-spacing: 2px;" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a style="font-family: 'Montserrat', sans-serif;font-weight: 700;" class="nav-link mr-4" style="font-weight:700;font-family: 'Montserrat', sans-serif;letter-spacing: 2px;" href="food_news.html">FOOD NEWS</a>
+                      </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle mr-4" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="font-weight: bold;letter-spacing: 2px;">RECIPES</a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="Project_VegetarianRecipe.html">Vegetarian</a>
+                          <a class="dropdown-item" href="Project_DessertRecipe.html">Desert</a>
+                          <a class="dropdown-item" href="Project_AppetizerRecipe.html">Apptizer</a>
+                        </div>
+                    </li>
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle mr-4" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="font-weight: bold;letter-spacing: 2px;">CUISINES</a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="project_asiancuisine.html">Asian Food</a>
+                            <a class="dropdown-item" href="Project_WesternCuisine.html">Western Food</a>
+                            <a class="dropdown-item" href="project_indonesiancuisine.html">Indonesian Food</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active">
+                          <a class="nav-link mr-4" style="font-weight: bold;font-family: 'Montserrat', sans-serif; ;letter-spacing: 2px;" href="Project_About.html">ABOUT</a>
+                        </li>
+                        </div>
+                    </div>   
+                </nav><br>
+                <nav aria-label="breadcrumb ml-5">
+                    <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="project_home.html">Home</a></li>
+                      <li class="breadcrumb-item"><a href="Project_About.html">About</a></li>
+                    </ol>
+                </nav>
+                
+                <div  style="background-color: white;" >
+                  <div class="container">
+                    <div class="row">
+                    <div class="col-sm-8"><br>
+                    <h2 style="font-family: 'Montserrat', sans-serif; font-size: 200%; font-weight: 700;letter-spacing: 3px; text-align: left;">HI, I`M MICHAEL</h2><br>
+                    <div style="border: solid 2px BLACK;border-radius: 2px;padding: 10px;">
+                    <h6 style="font-size: 115%; font-weight: 300;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">I’m a food lover, number cruncher, and meticulous budgeter. I love science and art, and the way they come together when I cook. I love to create, problem solve, and learn new things. Making great food is my passion, my purpose, and my favorite thing to share with others. Want to learn with me?</h6>
+                    <img src="img/about1.jpg" alt="masakan" width="700px" height="500px"><br><br>
+                    <h3 style="font-family: 'Montserrat', sans-serif; font-size: 200%; font-weight: 700;letter-spacing: 3px; text-align: left;">QUICK INFO:</h3>
+                    <p>Location: Nashville, TN</p>
+                    <P>Age: old enough to remember life before Facebook. Adult life.</P>
+                    <p>Education: B.S. Nutritional Science, Louisiana State University, 2007; B.S. Clinical Laboratory Science, Louisiana State University, 2011</p>
+                    <p>Years Blogging: 11</p>
+                    <p>What did you do before blogging: Microbiologist</p>
+                    <p>Zodiac Sign: Scorpio</p>
+                    <p>Favorite Charity: Feeding America</p>
+                    <p>Savory or Sweet: SAVORY</p>
+                    <p>Pie or Cake: Pie (the pizza kind)</p>
+                    <p>Food Philosophy: Everything in moderation and KEEP IT SIMPLE.</p>
+                    <p>Publications: Budget Bytes: Over 100 Easy, Delicious Recipes to Slash Your Grocery Bill in Half</p><br>
+                    <h3 style="font-family: 'Montserrat', sans-serif; font-size: 200%; font-weight: 700;letter-spacing: 3px; text-align: left;">MY STORY</h3><br>
+                    <p>I started Budget Bytes in 2009, at a point when I felt like I was losing the battle with adulthood. I had recently graduated from college, my student loans had gone into repayment, but I was working a low wage job and was barely able to make ends meet. I had already cut all discretionary spending from my budget, so the only place left to cut was food. Frustrated and unwilling to eat ramen noodles every day, I started tracking every penny that I spent on food to see if there were any small corners that could be cut. And that’s when everything changed.</p><br>
+                    <p>The simple act of tracking my food costs was transformative. With all the data in front of me I was able to see where my money was being wasted and where I was was getting the most value. I began planning my meals and grocery lists around the budget savers and avoiding the budget sinkers. I started experimenting with new recipes, discovering new foods, and finding new ways to keep my stomach satisfied while still spending less. And that’s when Budget Bytes was born.</p><br>
+                    <p>I didn’t think anyone would ever see the blog, but it was a fun project and a great way to document my recipes and progress. What I didn’t know at the time was how many other people were dealing with the same budget issues, and how many more people needed to learn basic cooking skills. When the enormity of these two things hit me, Budget Bytes stopped being just a hobby and became my mission.</p><br>
+                    <img src="img/about2.jpg" alt="masakan" width="700px" height="600px"><br><br>
+                    <p>Budget Bytes has been going strong for almost ten years and has never stopped growing! Since starting the blog, I’ve gone back to school for a second degree, published a cookbook, developed a Budget Bytes mobile app, and expanded the Budget Bytes website and team. I never could have imagined that life could be this amazing. Every day I’m overwhelmed with gratitude for having the opportunity to use my creativity in a way that makes a positive impact on the lives of others. I am the luckiest woman alive.</p><br>
+                    <h3 style="font-family: 'Montserrat', sans-serif; font-size: 200%; font-weight: 700;letter-spacing: 3px; text-align: left;">Thanks for stopping by!</h3><br>
+                    <br>
+                    <img src="img/about3.jpg" alt="masakan" width="700px" height="450px"><br><br>
+                <ul style="position: relative;right: -5cm;">
+                  <li style="display: inline-block; margin: 10px 10px;"><a style="color:#ec51b1 ;font-size: 35px;transition: 0.2s;" href=""><i class="fab fa-instagram"></i></a></li>
+                  <li style="display: inline-block; margin: 10px 10px;"><a style="color:#2980b9 ;font-size: 35px;transition: 0.2s;" href=""><i class="fab fa-facebook"></i></a> </li>
+                  <li style="display: inline-block; margin: 10px 10px;"><a style="color:#e74a4a ;font-size: 35px;transition: 0.2s;" href=""><i class="fas fa-envelope"></i></a></li>
+                  <li style="display: inline-block; margin: 10px 10px;"><a style="color:#62c0ff ;font-size: 35px;transition: 0.2s;" href=""><i class="fab fa-twitter"></i></a></li>
+                </ul>
+                </div>
+                </div>
+                <div class="col-sm-3 offset-sm-1"><br><br>
+               
+                  <div class="card" style="width: 18rem;">
+                    <div style="border: solid 2px BLACK;border-radius: 2px;padding: 10px;">
+                    <img src="img/mic.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h6 style="text-align: center;font-weight: 700;font-size: 3CH;font-family:'Montserrat', sans-serif; ;">HI I'M MICHAEL !</h6>
+                      <p class="card-text">I believe you can make great food with everyday ingredients even if you’re short on time and cost conscious. You just need to cook clever and get creative !.</p>
+               
+                  </div>
+                  </div> 
+                </div> 
+                </div>
+              </div>
+              </div>
+              <div class="container">
+                <hr>
+              </div>
+              <BR>
+              
+                <!--Footer-->
+    <br> <br>
+
+    <div style="background-color: whitesmoke;">
+      <hr style="border: 3px solid black;">
+      <footer class="page-footer">
+        <div class="container text-center text-md-left">
+          <div class="row">
+            <div class="col-md-4 mx-auto">
+              <a class="navbar-brand" href="#">
+                <img src="img/cooklist.png" weight="40" height="40" alt="" class="d-inline-block" loading
+                ="lazy">
+                COOKLIST
+            </a>
+              <p style="font-size: 20px; position: relative; top: 10px;">…no one is born a great cook, one learns by doing.<p style="font-weight: bold; position: relative; top: 15px;">Julia Child </p></p>
+            </div>
+
+            <hr class="clearfix w-100 d-md-none">
+
+
+            <div class="col-md-2 mx-auto">
+
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Recepies</h5>
+
+              <ul class="list-unstyled">
+                <li>
+                  <a href="Project_AppetizerRecipe.html">Appetizer</a>
+                </li>
+                <li>
+                  <a href="Project_VegetarianRecipe.html">Vegetarian</a>
+                </li>
+                <li>
+                  <a href="Project_DessertRecipe.html">Desert</a>
+                </li>
+              </ul>
+
+            </div>
+
+
+            <hr class="clearfix w-100 d-md-none">
+
+            <div class="col-md-2 mx-auto">
+
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Cuisines</h5>
+
+              <ul class="list-unstyled">
+                <li>
+                  <a href="Project_ChineseCuisine.html">Asian Cuisines</a>
+                </li>
+                <li>
+                  <a href="Project_WesternCuisine.html">West Cuisines</a>
+                </li>
+                <li>
+                  <a href="Project_IndonesiaCuisine">Indonesian Cuisines</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <ul class="list-unstyled list-inline text-center py-2">
+          <li class="list-inline-item">
+            <h5 class="mb-1">Register for free</h5>
+          </li>
+          <li class="list-inline-item">
+            <a href="#!" class="btn btn-danger btn-rounded">Sign up!</a>
+          </li>
+        </ul>
+
+        <ul class="list-unstyled list-inline text-center">
+          <li class="list-inline-item">
+            <a class="btn-floating btn-fb mx-1">
+              <i class="fab fa-facebook-f"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-tw mx-1">
+              <i class="fab fa-twitter"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-gplus mx-1">
+              <i class="fab fa-google-plus-g"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-li mx-1">
+              <i class="fab fa-linkedin-in"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-dribbble mx-1">
+              <i class="fab fa-dribbble"> </i>
+            </a>
+          </li>
+        </ul>
+        </div>
+
+        <div class="footer-copyright text-center py-3" style="background-color:black;">© 2020 Copyright:
+          <a href="tugas_project.html"> COOKLIST.com</a>
+        </div>
+      </footer>
+      <!--Footer-->
+</div>
+</nav>
+</body>
+</html>
+      
+
+            
+              
